@@ -79,9 +79,9 @@ export default function App() {
   const fetchData = async () => {
     try {
       const res = await axios.get(
-        "https://api.pexels.com/v1/search?query=${encodeURIComponent('mobile wallpaper')}&orientation=portrait",
+        "",
         {
-          headers: { Authorization: "fzGo5K7oHPriXQawpdbJJi0vh8oBPSHsEfybrQj8BSCADJRpmZKIUp30" }
+          headers: { Authorization: "" }
         });
       setData(res.data),
         console.log(res.data)
